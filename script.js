@@ -3,10 +3,12 @@ function generateResume(event) {
     
     document.getElementById("inputContainer").style.display = "none";
     document.getElementById("outputContainer").style.display = "block";
-    
 
 
     document.getElementById("outputName").innerText = document.getElementById("name").value;
+    document.getElementById("outputEmail").innerText = document.getElementById("email").value;
+    document.getElementById("outputPhone").innerText = document.getElementById("phone").value;
+    document.getElementById("outputLocation").innerText = document.getElementById("location").value
     document.getElementById("outputJobTitle").innerText = document.getElementById("jobTitle").value;
     document.getElementById("outputSummary").innerText = document.getElementById("summary").value;
     document.getElementById("outputExperience").innerText = document.getElementById("experience").value;
@@ -48,7 +50,7 @@ function editResume() {
     document.getElementById("inputContainer").style.display = "block";
 }
 
-//  print 
-function printResume() {
-    window.print();
+//  download
+function DownloadResume() {
+    window.onload();
 }

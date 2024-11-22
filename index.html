@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <title>Dynamic Resume</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<!-- Input Form Container -->
+<!-- Input Form Container --> 
 
 <div id="inputContainer">
     <h1>Dynamic Resume Builder</h1>
@@ -27,11 +27,11 @@
     </fieldset><br>
 
             <fieldset>
-                <label for="Email">Email Id:</label>
+                <label for="email">Email Id:</label>
                 <input type="text" id="email" placeholder="Enter Your Email"></fieldset><br>
 
         <fieldset>
-            <label for="Location">Location:</label>
+            <label for="location">Location:</label>
             <input type="text" id="location" placeholder="Enter Your Location"></fieldset><br>
 
         <fieldset>
@@ -63,8 +63,8 @@
     </fieldset><br>
 
     <fieldset>
-        <label for="contact">Contact Number</label>
-        <input type="text" id="contact" placeholder="Phone Number"></fieldset><br>
+        <label for="phone">Contact Number</label>
+        <input type="text" id="phone" placeholder="Phone Number"></fieldset><br>
 
         <button type="submit">Generate Resume</button>
     </form>
@@ -87,11 +87,24 @@
                 <h3>Interest</h3>
                 <ul id="outputInterest"></ul>
             </div>
+            <div class="location-section">
+                <h3>Location</h3>
+                <p id="outputLocation"></p>
+            </div>
+            <div class="phone-section">
+                <h3>Phone</h3>
+                <p id="outputPhone"></p>
+            </div>
         </div>
         <div class="right-section">
             <div class="header">
                 <h1 id="outputName"></h1>
                 <h2 id="outputJobTitle"></h2>
+                <div class="email-section">
+                    <h3>Email</h3>
+                    <p id="outputEmail"></p>
+                </div>
+
             </div>
             <div class="summary-section">
                 <h3>Summary</h3>
@@ -109,7 +122,7 @@
               <!-- Action Buttons at the Bottom of Output -->
     <div class="output-buttons">
         <button onclick="editResume()">Preview/Edit</button>
-        <button onclick="printResume()">Print</button>
+        <button onclick="downloadResume()">Download</button>
     </div>
         </div>
     </div>
