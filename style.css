@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebf5;
+    margin-top: 0;
+    padding: 0px;
+}
+
+h1, h3 {
+    color: #f36595;
+}
+
+/* input */
+#inputContainer{
+    background-color: #0D1E4C;
+    padding: 6vh;
+    border-radius: 40px;
+    color: white;
+    box-shadow: 15px 2px 9px #C48C83;
+    
+}
+label{
+    color: #f36595;
+    font-weight: extra-bold;
+    padding-bottom: 5vh;
+}
+
+
+
+/* -------input ends---------- */
+
+.resume-container {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    background-color: #0D1E4C;
+    color: #fff;
+    border-radius: 16px;
+    margin-top: 20px;
+    box-shadow: 10px 4px 8px rgba(160, 20, 20, 0.2);
+}
+
+/* Left Section */
+.left-section {
+    width: 50%;
+    padding: 50px;
+    background-color: #0D1E4C;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.profile-image img {
+    height: 21vh;
+    width: fit-content;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto 0px;
+    background-color: #0D1E4C;
+}
+
+.skills-section ul {
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+
+}
+
+.interest-section ul {
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.location-section {
+    list-style: none;
+    margin-left: 0pc;
+    padding: px;
+    text-align: left;
+}
+.phone-section {
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+    text-align: left;
+}
+
+/* Right Section */
+.right-section {
+    width: 60%;
+    padding: 0px;
+}
+
+.header h1 {
+    color: #f36595;
+    margin: 25px;
+    padding: 5px;
+    text-align: left;
+}
+
+.header h2 {
+    color: #f7eff1;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Other Sections */
+.jobtitle-section .email-section, .summary-section, .experience-section, .education-section {
+    margin-bottom: 27px;
+    padding: 0px;
+}
+
+button {
+    background-color: #f36595;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0D1E4C;
+}
+
+
+/* --------button-------- */
+
+.output-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.output-buttons button {
+    background-color: #f36595;
+    color: #fff;
+    font-family: Elephant;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.output-buttons button:hover {
+    background-color: #0D1E4C;
+}

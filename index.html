@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<!-- Input Form Container --> 
+
+<div id="inputContainer">
+    <h1>Dynamic Resume Builder</h1>
+    <form id="resumeForm" onsubmit="generateResume(event)">
+        <!-- Profile Picture -->
+    <fieldset>
+        <legend>Profile Picture</legend>
+        <label for="profilePicture">Upload Profile Picture:</label>
+        <input type="file" id="profilePicture" accept="image/*" required onchange="previewImage(event)">
+    </fieldset><br>
+
+        <!-- Other Input Fields -->
+        
+         <fieldset>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Name">
+    </fieldset><br>
+
+            <fieldset>
+                <label for="email">Email Id:</label>
+                <input type="text" id="email" placeholder="Enter Your Email"></fieldset><br>
+
+        <fieldset>
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter Your Location"></fieldset><br>
+
+        <fieldset>
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" placeholder="Enter Your Job Title" required>
+           </fieldset><br>
+    
+           <fieldset>
+            <label for="summary">Summary:</label>
+            <textarea id="summary" id="summary" required></textarea>
+          </fieldset><br>
+    
+          <fieldset>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" id="Experience" placeholder="Enter your Experience" Required></textarea>
+    </fieldset><br>
+        
+    <fieldset>
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Enter Your Education" required></textarea></fieldset><br>
+    
+    <fieldset>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Enter Your Skills" required></textarea></fieldset><br>
+            
+    <fieldset>
+            <label for="interest">Interest:</label>
+            <textarea id="interest" placeholder="Enter Your Interest" required></textarea>
+    </fieldset><br>
+
+    <fieldset>
+        <label for="phone">Contact Number</label>
+        <input type="text" id="phone" placeholder="Phone Number"></fieldset><br>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+</div>
+
+<!-- Output Resume Container (Hidden by Default) -->
+<div id="outputContainer" style="display: none;">
+    <div class="resume-container">
+        <div class="left-section">
+            <div id="outputProfileImage" class="profile-image">
+                <img id="previewImage" src="" alt="Profile Picture">
+            </div>
+
+            <div class="skills-section">
+                <h3>Skills</h3>
+                <ul id="outputSkills"></ul>
+            </div>
+            
+            <div class="interest-section">
+                <h3>Interest</h3>
+                <ul id="outputInterest"></ul>
+            </div>
+            <div class="location-section">
+                <h3>Location</h3>
+                <p id="outputLocation"></p>
+            </div>
+            <div class="phone-section">
+                <h3>Phone</h3>
+                <p id="outputPhone"></p>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="header">
+                <h1 id="outputName"></h1>
+                <h2 id="outputJobTitle"></h2>
+                <div class="email-section">
+                    <h3>Email</h3>
+                    <p id="outputEmail"></p>
+                </div>
+
+            </div>
+            <div class="summary-section">
+                <h3>Summary</h3>
+                <p id="outputSummary"></p>
+            </div>
+            <div class="experience-section">
+                <h3>Experience</h3>
+                <p id="outputExperience"></p>
+            </div>
+            <div class="education-section">
+                <h3>Education</h3>
+                <p id="outputEducation"></p>
+            </div>
+
+              <!-- Action Buttons at the Bottom of Output -->
+    <div class="output-buttons">
+        <button onclick="editResume()">Preview/Edit</button>
+        <button onclick="downloadResume()">Download</button>
+    </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script  src="/script.js"></script>
+</body>
+</html>
